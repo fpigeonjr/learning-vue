@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section id="assignment">
+      {{me.name}}
+      <h2>YOUR NAME</h2>
+      {{me.age}}
+      <p>YOUR AGE</p>
+      {{me.age + 5}}
+      <p>YOUR AGE in 5 years</p>
+      {{getRandomInt(2)}}
+      <p>Favorite Number: RANDOM NUMBER BETWEEN 0 AND 1</p>
+      <div>
+        <img :src="imgLink" width="400" />
+      </div>
+      <!-- 6) Prepopulate the input field with your name via the "value" attribute -->
+      <input type="text" :value="me.name" />
+    </section>
+  </body>
+</html>
