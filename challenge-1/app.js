@@ -14,6 +14,9 @@ const app = Vue.createApp({
     getRandomInt(max) {
       return Math.floor(Math.random() * max)
     },
+    calculateAge() {
+      return this.me.age + 5
+    },
   },
 })
 app.mount('#assignment')

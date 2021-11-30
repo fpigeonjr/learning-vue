@@ -14,14 +14,10 @@
   </head>
   <body>
     <section id="assignment">
-      {{me.name}}
-      <h2>YOUR NAME</h2>
-      {{me.age}}
-      <p>YOUR AGE</p>
-      {{me.age + 5}}
-      <p>YOUR AGE in 5 years</p>
-      {{getRandomInt(2)}}
-      <p>Favorite Number: RANDOM NUMBER BETWEEN 0 AND 1</p>
+      <h2>{{me.name}}</h2>
+      <p>{{me.age}}</p>
+      <p>{{calculateAge()}} in 5 years</p>
+      <p>Favorite Number: {{getRandomInt(2)}}</p>
       <div>
         <img :src="imgLink" width="400" />
       </div>
