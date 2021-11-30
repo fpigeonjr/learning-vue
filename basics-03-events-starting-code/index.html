@@ -22,8 +22,12 @@
       <button v-on:click="reduce(5)">Reduce 5</button>
       <button v-on:click="reset()">Reset</button>
       <p>Result: {{ counter }}</p>
-      <input type="text" v-on:input="setName" />
-      <p>Your Name: {{name}}</p>
+      <input type="text" v-on:input="setName" v-on:keyup.enter="confirmInput" />
+      <p>Your Name: {{confirmedName}}</p>
+      <form v-on:submit.prevent="submitForm">
+        <input type="text" />
+        <button>Sign Up</button>
+      </form>
     </section>
   </body>
 </html>
