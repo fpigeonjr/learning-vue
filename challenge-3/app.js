@@ -5,7 +5,7 @@ const app = Vue.createApp({
     }
   },
   watch: {
-    count() {
+    result() {
       setTimeout(() => {
         this.count = 0
       }, 5000)
