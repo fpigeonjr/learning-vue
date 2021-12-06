@@ -7,12 +7,8 @@ const app = Vue.createApp({
     }
   },
   computed: {
-    hiddenBtnText() {
-      if (this.isHidden) {
-        return 'Show List'
-      } else {
-        return 'Hide List'
-      }
+    btnCaption() {
+      return this.isHidden ? 'Show List' : 'Hide List'
     },
   },
   methods: {
