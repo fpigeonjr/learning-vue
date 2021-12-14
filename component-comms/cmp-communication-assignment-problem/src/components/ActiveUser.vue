@@ -1,6 +1,8 @@
 <template>
-  <h2>Name: {{ name }}</h2>
-  <h3>Age: {{ age }}</h3>
+  <section>
+    <h2>Name: {{ name }}</h2>
+    <h3>Age: {{ age }}</h3>
+  </section>
 </template>
 
 <script>

@@ -1,5 +1,4 @@
 <template>
-  <h1>Hi from App</h1>
   <user-data @update-user="updateUser"></user-data>
   <active-user :name="name" :age="age"></active-user>
 </template>
@@ -20,3 +19,17 @@ export default {
   },
 }
 </script>
+
+<style>
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section {
+  margin: 2rem auto;
+  max-width: 40rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+</style>
