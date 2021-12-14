@@ -24,7 +24,7 @@ export default {
       enteredName: '',
       enteredAge: '',
     }
-  },
+  }, 
   methods: {
     handleSubmit() {
       this.$emit('update-user', this.enteredName, this.enteredAge)
