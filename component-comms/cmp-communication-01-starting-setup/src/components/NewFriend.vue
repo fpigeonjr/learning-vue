@@ -9,7 +9,7 @@
       <input type="tel" v-model="enteredPhone" />
     </div>
     <div>
-      <label for="name">Email</label>
+      <label for="email">Email</label>
       <input type="email" v-model="enteredEmail" />
     </div>
     <div>
