@@ -1,6 +1,6 @@
 <template>
-  <user-data @update-user="updateUser"></user-data>
   <active-user :name="user.name" :age="user.age"></active-user>
+  <user-data @update-user="updateUser"></user-data>
 </template>
 
 <script>
